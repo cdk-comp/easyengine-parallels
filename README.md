@@ -19,6 +19,7 @@ Note: If you are using other that Ubuntu/Debian system, then installation steps 
   ```bash
     sudo vagrant plugin install vagrant-hostmanager
     sudo vagrant plugin install vagrant-disksize
+    sudo vagrant plugin install vagrant-parallels
   ```
 
 ## Let's setup Vagrant
@@ -34,7 +35,7 @@ Note: If you are using other that Ubuntu/Debian system, then installation steps 
 2. Now start Vagrant
 
   ```bash
-  vagrant up
+  vagrant up --provider=parallels
   ```
 3. It will setup EasyEngine on Vagrant Box. To test, point your system browser to http://o.test - html project
 
